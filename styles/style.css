@@ -1,11 +1,18 @@
-  
-  * { /*Cambio universal*/
+:root {
+  --color-primario: #bcc7cb;
+  --color-secundario: black;
+  --color-terciario: rgb(214, 210, 210);
+  --color-confeti: pink;
+}  
+
+
+* { /*Cambio universal*/
     padding : 0;
     margin : 0;
 }
 
 body {
-  background-color: #bcc7cb;
+  background-color: var(--color-primario);
   
   
 }
@@ -23,7 +30,7 @@ body {
 .confetti{
     width:30px;
     height: 30px;
-    background:pink;
+    background:var(--color-confeti);
     border-radius: 50%;
     animation:confetti 5s ease-out infinite;
     position: absolute;
@@ -53,8 +60,8 @@ body {
   }
   
   .footer {
-    color: black;
-    background-color: rgb(214, 210, 210) ;
+    color: var(--color-secundario);
+    background-color:var(--color-terciario);
     padding: 3px;
     text-align: center;
     font-size: 8px;
