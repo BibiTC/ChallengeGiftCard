@@ -1,27 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
-    <link rel="stylesheet" href="card.css" type="text/css" >
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>GiftCard</title>
+    <link rel="stylesheet" href="./styles/card.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <!-- Agrega la hoja de estilo de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-    <div class="root">
-    <div class="card-container">
-        <div class="card">
-        <div class="front">
-            <span>💌</span>
-            <p>¡Pienso en ti!</p>
+    <header></header>
+    <main>
+        <div class="card-borde">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <!-- Imagen del regalo abierto -->
+                        <img src="./assets/regaloabierto.png" alt="Regalo abierto" class="img-fluid" width="200"
+                            id="regaloAb">
+
+                        <!-- <span>💌</span>-->
+                        <p>¡Feliz cumpleaños Emman!</p>
+
+                        <!-- Div para el contenido del regalo -->
+                        <div class="card-body">
+                             <p><br>Que Dios te colme de
+                                bendiciones este nuevo año.
+
+                                ¡Feliz cumpleaños, con todo mi cariño!</p>
+                            
+                                <img src="./assets/flork.png" class="img-fluid" width="200">
+                        </div>
+
+                    </div>
+                    <div class="back" onclick="playAudio()">
+                        <!-- Imagen del regalo cerrado -->
+                        <img src="./assets/regalocerrado.png" alt="Regalo cerrado" class="img-fluid" width="200"
+                            id="regalo">
+
+                        <p>Click para abrir</p>
+                    </div>
+
+                    <!-- Elemento de audio oculto -->
+                    <audio id="audio" controls style="display: none">
+                        <source src="./assets/felizcumple.mp3" type="audio/mp3">
+                    </audio>
+
+
+
+                </div>
+            </div>
+            <div class="confetti" style="--i:2;left:20%"></div>
         </div>
-        <div class="back">
-            Click para abrir
-        </div>
-        </div>
-    </div>
-    <div class="confetti" style="--i:2;left:20%" ></div>
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    </main>
+    <footer class="footer">
+        <p>© 2025 Desarrollado por Ao+B. Todos los derechos reservados.</p>
+    </footer>
 </body>
+
 </html>

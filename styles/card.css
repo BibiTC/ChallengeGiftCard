@@ -3,7 +3,7 @@
   font-family: "Gloria Hallelujah";
   cursor: pointer;
   padding: 24px;
-  width: 240px;
+  width: 600px;
   height: 360px;
   position: relative;
   transition: 0.3s;
@@ -61,8 +61,10 @@ transform: rotateY(180deg);
 
 .card p {
   font-size: 1.6rem;
+
 }
 
 .flip {
   transform: rotateY(180deg);
 }
+
