@@ -8,10 +8,12 @@
   --color-confeti: pink;
   --color-borde-caja: rgba(0, 0, 0, 0.35);
   --color-back: #323232;
+
+  --fuente-gloria: "Gloria Hallelujah";
 } 
 
 .card-container {
-  font-family: "Gloria Hallelujah";
+  font-family: var(--fuente-gloria)
   cursor: pointer;
   padding: 24px;
   width: 600px;
