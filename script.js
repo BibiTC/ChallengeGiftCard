@@ -19,6 +19,6 @@ function playAudio() {
   // Obtén el elemento de audio
   var audio = document.getElementById("audio");
   // Reproduce el audio
-  /*audio.play();*/
+  audio.play();
   onClick();
 }
